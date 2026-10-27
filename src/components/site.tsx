@@ -124,14 +124,13 @@ export function TextLink({ children, ...props }: React.ComponentProps<typeof Lin
   );
 }
 
-/** Honest placeholder until genuine CIBI slab photography is uploaded. */
+/** Polished sample photo, enhanced from CIBI's brochure sample sheet. */
 export function StoneSwatch({ product, className = "" }: { product: Product; className?: string }) {
   return (
-    <div className={`relative flex flex-col justify-between overflow-hidden bg-ivory p-6 ${className}`}>
-      <span className="eyebrow text-stone">Slab photography pending</span>
-      <span className="font-display text-7xl leading-none text-charcoal/10 transition-transform duration-700 group-hover:scale-105">
-        {product.name.slice(0, 2)}
-      </span>
+    <div className={`relative overflow-hidden bg-charcoal ${className}`}>
+      <img src={product.image} alt={`${product.name} polished granite sample`} loading="lazy" width={928} height={1152}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-[1.04]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-charcoal/25 via-transparent to-paper/10" />
     </div>
   );
 }

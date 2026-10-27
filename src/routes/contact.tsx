@@ -38,7 +38,7 @@ function Contact() {
     if (!name || !/^\S+@\S+\.\S+$/.test(email)) return setError("Please enter your name and a valid email address.");
     setError("");
     const body = ["name", "email", "phone", "type", "product", "application", "quantity", "location", "message"]
-      .map((k) => `${k[0].toUpperCase() + k.slice(1)}: ${d.get(k) || "—"}`)
+      .map((k) => `${k.charAt(0).toUpperCase() + k.slice(1)}: ${d.get(k) || "—"}`)
       .join("\n");
     window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(`Quote request from ${name}`)}&body=${encodeURIComponent(body)}`;
     setSent(true);

@@ -57,12 +57,12 @@ function Projects() {
         ))}
         <div className="pt-10 md:col-span-12"><Link to="/contact" className="eyebrow border border-foreground px-8 py-4 hover:bg-foreground hover:text-background">Discuss your project</Link></div>
       </section>
-      {open !== null && (
+      {open !== null && items[open] && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-charcoal/95 p-6" onClick={() => setOpen(null)} role="dialog" aria-modal>
-          <img src={items[open].img} alt={items[open].label} className="max-h-[85vh] max-w-full object-contain" onClick={(e) => e.stopPropagation()} />
+          <img src={items[open]!.img} alt={items[open]!.label} className="max-h-[85vh] max-w-full object-contain" onClick={(e) => e.stopPropagation()} />
           <div className="absolute inset-x-0 bottom-6 flex items-center justify-center gap-10 text-ivory">
             <button className="eyebrow" onClick={(e) => { e.stopPropagation(); setOpen((open - 1 + items.length) % items.length); }}>← Prev</button>
-            <span className="eyebrow text-ivory/60">{items[open].label}</span>
+            <span className="eyebrow text-ivory/60">{items[open]!.label}</span>
             <button className="eyebrow" onClick={(e) => { e.stopPropagation(); setOpen((open + 1) % items.length); }}>Next →</button>
           </div>
           <button className="eyebrow absolute right-6 top-6 text-ivory" onClick={() => setOpen(null)}>Close</button>

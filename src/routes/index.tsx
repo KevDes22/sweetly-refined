@@ -35,7 +35,7 @@ function Home() {
         <img src={hero} alt="Living room with natural stone feature wall and polished stone floor" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative mx-auto flex h-full max-w-[1440px] flex-col justify-end px-6 pb-24 md:px-12 md:pb-32">
-          <p className="eyebrow animate-rise text-gold">CIBI Marble &amp; Granite — Kaduna · Abuja</p>
+          <p className="eyebrow animate-rise text-ivory/80">CIBI Marble &amp; Granite — Kaduna · Abuja</p>
           <h1 className="animate-rise mt-6 max-w-4xl text-5xl leading-[1.02] [animation-delay:150ms] md:text-[5.5rem]">
             Nature's Finest. <em className="text-ivory/80">Crafted for Extraordinary Spaces.</em>
           </h1>

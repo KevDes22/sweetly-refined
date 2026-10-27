@@ -137,14 +137,13 @@ export function StoneSwatch({ product, className = "" }: { product: Product; cla
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <Link to="/collections/$slug" params={{ slug: product.slug }} className="group block">
+    <Link to="/collections/$slug" params={{ slug: product.slug }} className="group flex h-full flex-col">
       <StoneSwatch product={product} className="aspect-[4/5]" />
-      <div className="mt-5 flex items-start justify-between gap-4 border-t border-border pt-4">
-        <div>
-          <h3 className="text-2xl">{product.name}</h3>
-          <p className="eyebrow mt-2 text-stone">{product.category ?? "Category to be confirmed"}</p>
-        </div>
-        <span className="eyebrow mt-2 shrink-0 opacity-60 transition-opacity group-hover:opacity-100">View →</span>
+      <div className="mt-5 flex flex-1 flex-col border-t border-border pt-4">
+        <p className="eyebrow text-stone">{product.category}</p>
+        <h3 className="mt-2 text-2xl">{product.name}</h3>
+        <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{product.description}</p>
+        <span className="eyebrow mt-5 inline-block self-start border border-foreground px-5 py-3 transition-colors group-hover:bg-foreground group-hover:text-background">View Product</span>
       </div>
     </Link>
   );

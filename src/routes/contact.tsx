@@ -3,12 +3,12 @@ import { useState, type FormEvent } from "react";
 import { applications, company, enquiryMessage, products } from "@/lib/catalogue";
 import { PageIntro } from "@/components/site";
 
-type Search = { product?: string; application?: string };
+type Search = { product?: string | undefined; application?: string | undefined };
 
 export const Route = createFileRoute("/contact")({
   validateSearch: (s: Record<string, unknown>): Search => ({
-    product: typeof s.product === "string" ? s.product : undefined,
-    application: typeof s.application === "string" ? s.application : undefined,
+    product: typeof s["product"] === "string" ? s["product"] : undefined,
+    application: typeof s["application"] === "string" ? s["application"] : undefined,
   }),
   head: () => ({
     meta: [

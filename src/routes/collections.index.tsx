@@ -2,12 +2,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { products, materialCategories } from "@/lib/catalogue";
 import { PageIntro, ProductCard } from "@/components/site";
 
-type Search = { tone?: string; application?: string };
+type Search = { tone?: string | undefined; application?: string | undefined };
 
 export const Route = createFileRoute("/collections/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
-    tone: typeof s.tone === "string" ? s.tone : undefined,
-    application: typeof s.application === "string" ? s.application : undefined,
+    tone: typeof s["tone"] === "string" ? s["tone"] : undefined,
+    application: typeof s["application"] === "string" ? s["application"] : undefined,
   }),
   head: () => ({
     meta: [

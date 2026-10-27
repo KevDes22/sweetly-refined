@@ -8,7 +8,7 @@ export const company = {
   name: "CIBI Marble & Granite Ltd",
   email: "sales@cibimarbles.com",
   phones: ["0805 938 8382", "0803 476 6930", "0803 554 5068"],
-  abuja: "Suite B10/11, 1st Floor, Patsy Plaza, Ebitu Ukiwe, Jabi, Abuja",
+  abuja: "Suite B10/11, 1st Floor, Patsy Plaza, Ebittu Ukiwe, Jabi, Abuja",
   kaduna: "Kaduna, Nigeria",
 };
 

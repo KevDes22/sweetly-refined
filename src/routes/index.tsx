@@ -11,7 +11,7 @@ import { ProductCard, SectionHeading, TextLink } from "@/components/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CIBI Marble & Granite — Natural Stone Crafted in Nigeria" },
+      { title: "CIBI Marbles & Granite — Natural Stone Crafted in Nigeria" },
       { name: "description", content: "Granite, marble and architectural stone surfaces manufactured in Kaduna, Nigeria. Showrooms in Kaduna and Abuja." },
       { property: "og:title", content: "CIBI Marble & Granite — Natural Stone Crafted in Nigeria" },
       { property: "og:description", content: "Granite, marble and architectural stone surfaces manufactured in Kaduna, with showrooms in Kaduna and Abuja." },

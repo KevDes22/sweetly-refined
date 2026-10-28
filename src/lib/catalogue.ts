@@ -80,7 +80,7 @@ export const products: Product[] = seeds.map((s) => {
     specs: [
       { label: "Material", value: "Granite" },
       { label: "Colour", value: s.colour },
-      { label: "Finish", value: "Polished (per CIBI brochure). Other finishes — contact CIBI" },
+      { label: "Finish", value: "Polished. Other finishes — contact CIBI" },
       { label: "Dimensions & thickness", value: "Contact CIBI" },
       { label: "Recommended applications", value: "Kitchen, flooring, walls" },
       { label: "Processed in", value: "Kaduna, Nigeria" },

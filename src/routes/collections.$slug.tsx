@@ -16,7 +16,7 @@ export const Route = createFileRoute("/collections/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.product.name} Granite — CIBI Marble & Granite` },
+          { title: `${loaderData.product.name} Granite — CIBI Marbles & Granite` },
           { name: "description", content: `${loaderData.product.name}: ${loaderData.product.description} See it in a kitchen, floor or wall and request a quotation.` },
           { property: "og:title", content: `${loaderData.product.name} Granite — CIBI` },
           { property: "og:description", content: loaderData.product.description },

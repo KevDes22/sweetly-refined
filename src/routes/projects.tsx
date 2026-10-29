@@ -10,9 +10,9 @@ import { PageIntro } from "@/components/site";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — CIBI Marble & Granite Installations" },
+      { title: "Projects — CIBI Marbles & Granite Installations" },
       { name: "description", content: "Granite and marble countertops, staircases, flooring and vanities — natural stone in finished spaces." },
-      { property: "og:title", content: "Projects — CIBI Marble & Granite" },
+      { property: "og:title", content: "Projects — CIBI Marbles & Granite" },
       { property: "og:description", content: "Spaces that tell our story." },
     ],
   }),

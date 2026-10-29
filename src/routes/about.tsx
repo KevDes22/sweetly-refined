@@ -7,8 +7,8 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About CIBI — Indigenous Nigerian Stone Manufacturer" },
-      { name: "description", content: "CIBI Marble & Granite is an indigenous Nigerian manufacturer of granite and marble surfaces, based in Kaduna with showrooms in Kaduna and Abuja." },
-      { property: "og:title", content: "About CIBI Marble & Granite" },
+      { name: "description", content: "CIBI Marbles & Granite is an indigenous Nigerian manufacturer of granite and marble surfaces, based in Kaduna with showrooms in Kaduna and Abuja." },
+      { property: "og:title", content: "About CIBI Marbles & Granite" },
       { property: "og:description", content: "Crafted in Nigeria. Designed to Last." },
     ],
   }),

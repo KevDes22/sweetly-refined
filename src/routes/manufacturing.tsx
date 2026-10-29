@@ -6,9 +6,9 @@ import { PageIntro } from "@/components/site";
 export const Route = createFileRoute("/manufacturing")({
   head: () => ({
     meta: [
-      { title: "Manufacturing in Kaduna — CIBI Marble & Granite" },
+      { title: "Manufacturing in Kaduna — CIBI Marbles & Granite" },
       { name: "description", content: "How CIBI sources, cuts, polishes and fabricates natural stone in Kaduna using Italian technology." },
-      { property: "og:title", content: "Manufacturing in Kaduna — CIBI Marble & Granite" },
+      { property: "og:title", content: "Manufacturing in Kaduna — CIBI Marbles & Granite" },
       { property: "og:description", content: "From Nigerian quarry to finished surface: CIBI's stone process." },
     ],
   }),

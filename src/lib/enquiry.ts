@@ -18,7 +18,7 @@ export function quoteMessage(q: QuoteDetails) {
   const line = (k: string, v?: string) => (v && v.trim() ? `${k}: ${v.trim()}\n\n` : "");
   const qty = q.quantity?.trim() ? `${q.quantity.trim()}${q.unit ? ` ${q.unit}` : ""}` : "";
   return (
-    "Hello CIBI Marble & Granite,\n\nI would like to request a quotation for one of your products.\n\n" +
+    "Hello CIBI Marbles & Granite,\n\nI would like to request a quotation for one of your products.\n\n" +
     line("Product", q.product) +
     line("Application", q.application) +
     line("Estimated Quantity", qty) +

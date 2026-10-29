@@ -12,9 +12,9 @@ export const Route = createFileRoute("/contact")({
   }),
   head: () => ({
     meta: [
-      { title: "Request a Quote & Showrooms — CIBI Marble & Granite" },
+      { title: "Request a Quote & Showrooms — CIBI Marbles & Granite" },
       { name: "description", content: "Request a quote or visit CIBI's showrooms in Kaduna and Jabi, Abuja for granite and marble surfaces." },
-      { property: "og:title", content: "Request a Quote — CIBI Marble & Granite" },
+      { property: "og:title", content: "Request a Quote — CIBI Marbles & Granite" },
       { property: "og:description", content: "Speak with CIBI about granite and marble for your project. Showrooms in Kaduna and Abuja." },
     ],
   }),

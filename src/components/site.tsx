@@ -32,7 +32,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:px-12">
         <Link to="/" className="flex items-baseline gap-3">
           <span className="font-display text-3xl tracking-[0.12em]">CIBI</span>
-          <span className="eyebrow hidden opacity-70 sm:inline">Marble &amp; Granite</span>
+          <span className="eyebrow hidden opacity-70 sm:inline">Marbles &amp; Granite</span>
         </Link>
         <nav className="hidden items-center gap-10 lg:flex">
           {nav.map((n) => (
@@ -68,7 +68,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-[1440px] gap-14 px-6 py-24 md:grid-cols-12 md:px-12">
         <div className="md:col-span-4">
           <p className="font-display text-5xl tracking-[0.12em]">CIBI</p>
-          <p className="eyebrow mt-2 text-ivory/60">Marble &amp; Granite Ltd</p>
+          <p className="eyebrow mt-2 text-ivory/60">Marbles &amp; Granite Ltd</p>
           <p className="mt-8 max-w-xs font-display text-2xl italic text-ivory/85">Crafted in Nigeria. Designed to Last.</p>
         </div>
         <FooterCol title="Explore">

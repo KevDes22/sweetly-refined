@@ -11,9 +11,9 @@ export const Route = createFileRoute("/collections/")({
   }),
   head: () => ({
     meta: [
-      { title: "Stone Collections — CIBI Marble & Granite Nigeria" },
+      { title: "Stone Collections — CIBI Marbles & Granite Nigeria" },
       { name: "description", content: "Browse CIBI's natural stone library: African Multicolor, Kamazo Grey, Champagne Gold, Zaria Red and more." },
-      { property: "og:title", content: "Stone Collections — CIBI Marble & Granite" },
+      { property: "og:title", content: "Stone Collections — CIBI Marbles & Granite" },
       { property: "og:description", content: "A curated library of Nigerian natural stone surfaces." },
     ],
   }),
